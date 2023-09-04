@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.statsContainer {
+  display: flex;
+  width: 22.5rem;
+  height: 40rem;
+  padding: 0.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  contain: content;
+  margin: auto
+}
+
+.pokeball {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  opacity: 0.05;
+}
+
+.pokemon {
+  display: flex;
+  width: 12.5rem;
+  height: 12.5rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 4.75rem;
+  top: 3.5rem;
+}
+
+.title {
+  display: flex;
+  padding: 1.25rem 1.25rem 1.5rem 1.25rem;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+  width: 100%;
+}
+
+.backButton {
+  width: 2rem;
+  height: 2rem;
+}
+
+.pokemonName {
+  flex: 1 0 0;
+  color: var(--grayscale-white, #fff);
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.pokemonId {
+  color: var(--grayscale-white, #fff);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1rem;
+  font-family: "Press Start 2P", cursive;
+}
+
+.pokemonPhoto {
+  display: flex;
+  padding: 1rem 1.25rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.pokemonInfo {
+  display: flex;
+  height: 25.75rem;
+  padding: 3.5rem 1.25rem 1.25rem 1.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 0.5rem;
+  background: var(--grayscale-white, #fff);
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25) inset;
+}
+
+.types {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.types li {
+  display: flex;
+  padding: 0.2rem 0.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0.625rem;
+  font-family: Roboto, "sans-serif";
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1rem;
+  color: white;
+}
+
+.aboutTitle {
+  color: var(--grayscale-medium, #666);
+  text-align: center;
+  font-family: Roboto, "sans-serif";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1rem;
+  align-self: stretch;
+}
+
+.about {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.card {
+  display: flex;
+  padding: 0.5rem 0rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+}
+
+.basicInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  flex: 1 0 0;
+}
+
+.divider {
+  width: 0.0625rem;
+  align-self: stretch;
+  background: var(--grayscale-light, #e0e0e0);
+}
+
+.imageCard {
+  width: 1rem;
+  height: 1rem;
+}
+
+.value {
+  color: var(--grayscale-medium, #666);
+  text-align: justify;
+  font-family: Roboto, "sans-serif";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.text {
+  align-self: stretch;
+  color: var(--grayscale-medium, #666);
+  text-align: center;
+  font-family: Roboto, "sans-serif";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.75rem;
+}
+
+.titleSection {
+  width: 19.5rem;
+  color: var(--grayscale-medium, #666);
+  text-align: center;
+  font-family: Roboto, "sans-serif";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.abilities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: stretch;
+  list-style-type: none;
+  color: var(--grayscale-medium, #666);
+}
+
+.ability {
+  margin-top: 1.5rem;
+  color: var(--grayscale-medium, #666);
+}
+
+.containerStats {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.statusContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.statsTitle {
+  width: 100%;
+}
+
+.baseStats {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  align-self: stretch;
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.baseStatsName {
+  color: var(--grayscale-medium, #666);
+  font-family: Roboto, "sans-serif";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1rem;
+  grid-area: statsName;
+}
+
+.baseStatsValue {
+  color: var(--grayscale-medium, #666);
+  font-family: Roboto, "sans-serif";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1rem;
+  grid-area: statsValue;
+}
+
+.movesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.moves {
+  color: var(--grayscale-medium, #666);
+  width: 100%;
+  text-align: right;
+  margin-right: 1rem;
+}
+
